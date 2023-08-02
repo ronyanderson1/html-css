@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TAGs Mais Utilizadas</title>
+        <style>
+            .img-in-text{
+                width: 180px;
+                height: 120px;
+            }
+            .vermelho{
+                font-size: 20px;
+                color: red;
+            }
+            .bloco{
+                font-style:italic;           
+                font-size:xx-large;
+                font-size: 25px;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="background-color: red;">Cabeçalho</h1>
+        <h2 style="background-color: aquamarine;">cabeçalho</h2>
+        <p><b>Lorem ipsum dolor</b>, sit amet consectetur adipisicing elit. Distinctio, 
+            at ex unde doloremque eaque deleniti optio laudantium tempora quisquam quasi. 
+            Excepturi voluptates aspernatur sit ut odio, tempore dolorem illo. Tempore?
+            <code>console.log</code>
+        </p>
+        <hr>
+        <p><strong>
+            A </strong><i>A empresa em si é uma empresa muito bem sucedida. </i>
+            <a href="">Este é um link</a> <span class="vermelho">orientamos</span> para estarmos preparados para a menor 
+            e mais delicada opção, que tudo acontecerá conforme as necessidades.<em> Os prazeres do receptor devem ser 
+                tão <q cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q">duros quanto o ódio, naquele momento de dor.</q> No momento?</em><br>
+                <a href="" ><img class="img-in-text" src="https://encurtador.com.br/bxyHM"
+                alt="Logo da MDM"></a>     
+        </p>
+        <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote"> Aqui sim eu estou fazendo um bloco de citação</blockquote>
+        <pre>
+            <code>
+SELECT 
+PF.PEDF_DTA_EMIS                                     AS "EMISSAO",
+PF.PEDF_LIQU_ID                                      AS "LIQUIDACAO",
+PF.PEDF_NR_NF                                        AS "NOTA",
+LIQ.LIQU_FRO_ID                                      AS "COD_TRANS",
+LIQ.LIQU_NOME_TRANSP                                 AS "TRANSPORTADORA",       
+PF.PEDF_CLI_ID                                       AS "COD_CLIENTE",
+C.CLI_RAZAO_SOCIAL                                   AS "CLIENTE",
+CID.GEN_DESCRICAO                                    AS "CIDADE",
+CID.DESC_PROP_1                                      AS "UF",
+ROUND(PFP.PEDF_QTDE)                                 AS "QTDE",       
+DECODE(LIQ.LIQU_FRETE_C_F,'C','CIF','F','FOB')       AS "TIPO"
+FROM PEDIDO_FAT PF, PEDIDO_FAT_P PFP, LIQUIDACAO LIQ, CLIENTE C, CLIENTE_E CE, GENER$V CID
+WHERE PF.PEDF_EMP_ID = PFP.PEDF_PEDF_EMP_ID AND PF.PEDF_ID = PFP.PEDF_PEDF_ID                
+            
+            </code>
+        </pre>
+        <div class="bloco">Eu sou um bloco</div>
+    </body>
+</html>
