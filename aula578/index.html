@@ -61,6 +61,11 @@
                 placeholder="ex.: email@email.com">
             </p>
             <p>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password"
+                placeholder="Digite sua senha">
+            </p>
+            <p>
                 <label for="file">Seu Arquivo</label>
                 <input type="file" name="file" id="file"
                 accept=".png,image/*" multiple>
@@ -71,14 +76,67 @@
                 placeholder="Digite Número" min="10" max="50" step="5">
             </p>
             <p>
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password"
-                placeholder="Digite sua senha">
-            </p>
-            <p>
                 <label for="range">Range:</label>
                 <input type="range" name="range" id="range"
-                min="0" max="10" step="2">
+                min="0" max="20" step="2">
+                <datalist id="datalist">
+                    <option value="0" label="0%"></option>
+                    <option value="10" ></option>
+                    <option value="20" ></option>
+                    <option value="30" ></option>
+                    <option value="40" ></option>
+                    <option value="50" label="50%" ></option>
+                    <option value="60" ></option>
+                    <option value="70" ></option>
+                    <option value="80" ></option>
+                    <option value="90" ></option>
+                    <option value="100" label="100%" ></option>
+                </datalist>
+            </p>
+            <p>
+                <label for="url">Sua URL:</label>
+                <input type="url" id="url" name="ur"
+                placeholder="URL">
+            </p>
+            <p>
+                <label for="search">Sua Busca</label>
+                <input type="search" id="search" name="search"
+                placeholder="SEARCH">
+            </p>
+            <p>
+                <label for="select">Selecione alguma opção:</label>
+                <select name="select" id="select" multiple>
+                    <option value="qualquer1" label="Masculino"></option>
+                    <option value="qualquer2" label="Feminino"></option>
+                    <option value="qualquer3" label="Outro" disabled></option>
+                </select>
+            </p>
+            <p>
+            <label for="select">Selecione alguma opção:</label>
+                <select name="select2" id="select2">
+                    <optgroup label="Materia">
+                        <option value="matematica" label="Matemática"></option>
+                        <option value="portugues" label="Português"></option>
+                        <option value="quimica" label="Química" disabled></option>
+                        <option value="fisica" label="Física" disabled></option>
+                    </optgroup>
+                    <optgroup label="Educação">
+                        <option value="Religioso" label="Matemática"></option>
+                        <option value="Camarão" label="Português"></option>
+                        <option value="Opção" label="Química" disabled></option>
+                        <option value="Outro" label="Física" disabled></option>
+                    </optgroup>
+                    <optgroup label="Profissão">
+                        <option value="matematica" label="Matemática"></option>
+                        <option value="portugues" label="Português"></option>
+                        <option value="quimica" label="Química" disabled></option>
+                        <option value="fisica" label="Física" disabled></option>
+                    </optgroup>
+                </select>  
+            </p>
+            <p>
+                <label for="textarea">textarea:</label>
+                <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
             </p>
             <p>
                 <button type="submit">Enviar</button> 
